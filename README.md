@@ -1,4 +1,12 @@
-# Makara
+# Cellarise-Makara
+
+An i18n module for dust.js templates, forked from krakenjs/makara, with the addition of a shorter tag handler.
+
+The short tag handler provides a shorter helper tag format:
+```
+{@i n="content" v="index.title"/}
+```
+
 
 Load content bundles from a specific location. Optionally, decorate an express app to consume pre-localized templates,
 or localize templates on-the-fly. A summary of content property files and their use is also covered here.
