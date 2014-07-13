@@ -6,7 +6,11 @@ The short tag handler provides a shorter helper tag format:
 ```
 {@i n="content" v="index.title"/}
 ```
+An additional configuration option has been added to enable use of this new tag handler:
+- handler - (string, default: default)
 
+
+# Makara
 
 Load content bundles from a specific location. Optionally, decorate an express app to consume pre-localized templates,
 or localize templates on-the-fly. A summary of content property files and their use is also covered here.
