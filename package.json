@@ -1,14 +1,14 @@
 {
-  "name": "makara",
+  "name": "cellarise-makara",
   "version": "0.3.4",
-  "description": "i18n support for dust.js templates",
+  "description": "An i18n module for dust.js templates, forked from krakenjs/makara, with the addition of a shorter tag handler.",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krakenjs/makara.git"
+    "url": "https://github.com/cellarise/makara.git"
   },
   "keywords": [
     "dust.js",
@@ -17,37 +17,7 @@
     "localization",
     "templates"
   ],
-  "author": "Erik Toth <ertoth@paypal.com>",
-  "contributors": [
-    {
-      "name": "Richard Ragan",
-      "email": "rragan@paypal.com"
-    },
-    {
-      "name": "Stephen Westhafer",
-      "email": "swesthafer@paypal.com"
-    },
-    {
-      "name": "Lenny Markus",
-      "email": "lmarkus@paypal.com"
-    },
-    {
-      "name": "Jeff Harrell",
-      "email": "jeharrell@paypal.com"
-    },
-    {
-      "name": "Jean-Charles Sisk",
-      "email": "jsisk@paypal.com"
-    },
-    {
-      "name": "Sanjeev Koranga",
-      "email": "skoranga@paypal.com"
-    },
-    {
-      "name": "Dereck Quock",
-      "email": "dquock@paypal.com"
-    }
-  ],
+  "author": "John Barry",
   "licenses": [
     {
       "type": "Apache 2.0",

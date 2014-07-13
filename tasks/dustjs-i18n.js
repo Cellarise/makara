@@ -48,6 +48,7 @@ module.exports = function (grunt) {
 
         done = this.async();
         options = this.options({
+            handler: 'default',
             fallback: 'en_US',
             contentPath: ['locales'],
             tmpDir: 'tmp'
@@ -57,9 +58,11 @@ module.exports = function (grunt) {
         if (!Array.isArray(contentPath)) {
             contentPath = [contentPath];
         }
-		
-	contentPath = contentPath.map(correctPathSeparator);
-	filesSrc = this.filesSrc.map(correctPathSeparator);  
+
+        handler = require('../lib/handler/' + options.handler);
+
+	    contentPath = contentPath.map(correctPathSeparator);
+	    filesSrc = this.filesSrc.map(correctPathSeparator);
 
         contentPath = contentPath.map(function (cp) {
             var regexp = new RegExp('([\\' + path.sep + ']?)$');
@@ -76,7 +79,7 @@ module.exports = function (grunt) {
 
         // TODO: Currently only honors one locale directory.
         bundleRoot = Array.isArray(bundleRoot) ? bundleRoot[0] : bundleRoot;
-	bundles = (grunt.file.expand(contentPath)).map(correctPathSeparator);
+	    bundles = (grunt.file.expand(contentPath)).map(correctPathSeparator);
 
         function processTemplate(metadata) {
             var deferred, domane;
