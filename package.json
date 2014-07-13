@@ -1,6 +1,6 @@
 {
-  "name": "cellarise-makara",
-  "version": "0.1.1",
+  "name": "grunt-cellarise-makara",
+  "version": "0.1.2",
   "description": "An i18n module for dust.js templates, forked from krakenjs/makara, with the addition of a shorter tag handler.",
   "main": "index.js",
   "scripts": {

@@ -7,3 +7,4 @@ logs
 test/fixtures/.build
 *.log
 *.iml
+atlassian-ide-plugin.xml
