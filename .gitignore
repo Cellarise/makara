@@ -8,3 +8,6 @@ test/fixtures/.build
 *.log
 *.iml
 atlassian-ide-plugin.xml
+node_modules/
+bower_components/
+.idea/
